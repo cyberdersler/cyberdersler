@@ -175,12 +175,11 @@
         </p>
         <div class="split style1">
             <section>
-              <form action="https://formsubmit.co/cyberdersler@gmail.com" method="POST">
-    <!-- FormSubmit ayarları -->
+            <form action="https://formsubmit.co/cyberdersler@gmail.com" method="POST" onsubmit="return validateForm()">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="box">
     <input type="hidden" name="_next" value="https://cyberdersler.github.io/cyberdersler/tesekkur.html">
-    
+
     <div class="fields">
         <div class="field half">
             <label for="name">Adınız</label>
@@ -195,23 +194,26 @@
             <textarea name="message" id="message" rows="5" required></textarea>
         </div>
     </div>
+
     <ul class="actions">
         <li><button type="submit" class="button submit">Mesaj Göndər</button></li>
     </ul>
 </form>
 
 <script>
-document.querySelector("form").addEventListener("submit", function(e) {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+function validateForm() {
+    const name = document.querySelector("input[name='name']").value.trim();
+    const email = document.querySelector("input[name='email']").value.trim();
+    const message = document.querySelector("textarea[name='message']").value.trim();
 
     if (!name || !email || !message) {
         alert("Zəhmət olmasa bütün sahələri doldurun.");
-        e.preventDefault(); // formu göndərmə
+        return false; // form göndərilməsin
     }
-});
+    return true; // form göndərilsin
+}
 </script>
+
 
 
             </section>
