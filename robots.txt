@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+Crawl-delay: 10
+Sitemap: https://cyberdersler.github.io/cyberdersler/sitemap.xml
