@@ -175,7 +175,7 @@
         </p>
         <div class="split style1">
             <section>
-               <form action="https://formsubmit.co/cyberdersler@gmail.com" method="POST">
+              <form action="https://formsubmit.co/cyberdersler@gmail.com" method="POST">
     <!-- FormSubmit ayarları -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="box">
@@ -199,6 +199,19 @@
         <li><button type="submit" class="button submit">Mesaj Göndər</button></li>
     </ul>
 </form>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        alert("Zəhmət olmasa bütün sahələri doldurun.");
+        e.preventDefault(); // formu göndərmə
+    }
+});
+</script>
 
 
             </section>
