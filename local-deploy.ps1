@@ -1,4 +1,4 @@
-cd "C:\Users\emin\Desktop\sayt\html5up-hyperspace\cyberdersler"
+cd "C:\Users\emin\Desktop\docs\cyberdersler"
 
 git add .
 git commit -m "Auto update"
