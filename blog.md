@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Blog
+permalink: /blog/
 ---
 
-<h1>📚 Blog Yazılarsssı</h1>
+<h1>📚 Blog Yazıları</h1>
 
 <ul>
   {% for post in site.posts %}
