@@ -1,8 +1,5 @@
-title: CyberDersler
-description: Kibertəhlükəsizlik bloqu
 baseurl: "/cyberdersler"
 url: "https://cyberdersler.github.io"
 theme: minima
-
 plugins:
   - jekyll-sitemap
