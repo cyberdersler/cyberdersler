@@ -222,6 +222,18 @@ title: Ana Səhifə
 					</ul>
 				</div>
 			</footer>
+            <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const blogLink = document.querySelector('a[href="#blog"]');
+    if (blogLink) {
+      blogLink.addEventListener("click", function(e) {
+        e.preventDefault(); // normal scroll-u blokla
+        window.location.href = "{{ '/blog/' | relative_url }}"; // blog səhifəsinə yönləndir
+      });
+    }
+  });
+</script>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
