@@ -1,7 +1,7 @@
 title: CyberDersler
 description: Kibertəhlükəsizlik bloqu
-baseurl: ""
-url: "https://cyberdersler.github.io"
+baseurl: "cyberdersle"
+url: "https://cyberdersler.github.io/cyberdersler/"
 theme: minima
 
 plugins:
