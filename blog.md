@@ -17,6 +17,5 @@ permalink: /blog/
         </li>
       {% endfor %}
     </ul>
-     <a href="{{ '/blog/' | relative_url }}" class="button">Bütün yazılar →</a>
   </div>
 </section>
